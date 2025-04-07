@@ -40,7 +40,7 @@ select opt in "${options[@]}"; do
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username"
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" UserShell "/bin/zsh"
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" RealName "$realName"
-            dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" UniqueID "501"
+            dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" UniqueID "507"
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" PrimaryGroupID "20"
             mkdir "/Volumes/Data/Users/$username"
             dscl -f "$dscl_path" localhost -create "/Local/Default/Users/$username" NFSHomeDirectory "/Users/$username"
